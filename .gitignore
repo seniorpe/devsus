@@ -1,24 +1,77 @@
-# Compiled class file
-*.class
+# Directorios de construcción
+/target/
+/out/
 
-# Log file
+# Dependencias de Maven
+**/mvnw
+**/mvnw.cmd
+.mvn/wrapper/maven-wrapper.jar
+.mvn/wrapper/maven-wrapper.properties
+
+# Archivos de configuración del IDE
+/.idea/
+/*.iml
 *.log
+*.swp
+*.swo
+*.bak
+*.orig
+/.vscode/
+/*.launch
+/*.class
 
-# BlueJ files
-*.ctxt
+# Archivos de sistema operativo
+.DS_Store
+Thumbs.db
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
+# Archivos de configuración del sistema operativo
+/.project
+/.classpath
+/.settings/
 
-# Package Files #
+# Archivos de configuración de Eclipse
+/.metadata/
+/bin/
+/tmp/
+/.*.swp
+
+# Archivos de configuración de IntelliJ
+/.idea/
+/*.iml
+
+# Archivos de configuración de NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# Archivos de configuración de VSCode
+.vscode/
+.history/
+*.code-workspace
+
+# Archivos de Logs
+*.log
+*.log.*
+
+# Archivos de test
+/test-classes/
+/test-output/
+
+# Archivos de configuración de Gradle
+.gradle/
+/build/
+
+# Archivos de JAR/WAR
 *.jar
 *.war
-*.nar
 *.ear
-*.zip
-*.tar.gz
-*.rar
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
-replay_pid*
+# Archivos de propiedades de aplicación
+*.properties
+*.yml
+*.yaml
+
+# Carpetas de generación de código
+/generated/

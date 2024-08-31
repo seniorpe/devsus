@@ -1,0 +1,16 @@
+D:\Sources\devsus\people\src\main\java\pe\senior\rest\people\domain\entity\PersonaEntity.java
+D:\Sources\devsus\people\src\main\java\pe\senior\rest\people\infrastructure\exception\GlobalExceptionHandler.java
+D:\Sources\devsus\people\src\main\java\pe\senior\rest\people\infrastructure\repository\ClienteRepository.java
+D:\Sources\devsus\people\src\main\java\pe\senior\rest\people\application\dto\ClienteDTO.java
+D:\Sources\devsus\people\src\main\java\pe\senior\rest\people\infrastructure\exception\BusinessException.java
+D:\Sources\devsus\people\src\main\java\pe\senior\rest\people\application\service\impl\ClienteServiceImpl.java
+D:\Sources\devsus\people\src\main\java\pe\senior\rest\people\PeopleApplication.java
+D:\Sources\devsus\people\src\main\java\pe\senior\rest\people\domain\entity\ClienteEntity.java
+D:\Sources\devsus\people\src\main\java\pe\senior\rest\people\infrastructure\exception\NotFoundException.java
+D:\Sources\devsus\people\src\main\java\pe\senior\rest\people\domain\entity\CuentaEntity.java
+D:\Sources\devsus\people\src\main\java\pe\senior\rest\people\application\service\ClienteService.java
+D:\Sources\devsus\people\src\main\java\pe\senior\rest\people\api\controller\ClienteController.java
+D:\Sources\devsus\people\src\main\java\pe\senior\rest\people\api\mapper\ClienteMapper.java
+D:\Sources\devsus\people\src\main\java\pe\senior\rest\people\infrastructure\repository\PersonaRepository.java
+D:\Sources\devsus\people\src\main\java\pe\senior\rest\people\config\OpenApiConfig.java
+D:\Sources\devsus\people\src\main\java\pe\senior\rest\people\domain\entity\MovimientoEntity.java

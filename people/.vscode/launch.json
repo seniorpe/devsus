@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-PeopleApplication<people>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "pe.senior.rest.people.PeopleApplication",
+            "projectName": "people",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

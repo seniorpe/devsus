@@ -69,13 +69,11 @@ Thumbs.db
 *.ear
 
 # Archivos de propiedades de aplicación
-*.properties
+#*.properties
 #*.yml
-*.yaml
+#*.yaml
 
 # Carpetas de generación de código
 /generated/
 /account/target
-/account/target
-/people/target
 /people/target

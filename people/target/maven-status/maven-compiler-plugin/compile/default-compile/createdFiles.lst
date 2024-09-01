@@ -1,0 +1,17 @@
+pe\senior\rest\people\infrastructure\repository\PersonaRepository.class
+pe\senior\rest\people\domain\entity\PersonaEntity.class
+pe\senior\rest\people\infrastructure\exception\BusinessException.class
+pe\senior\rest\people\application\service\impl\ClienteServiceImpl.class
+pe\senior\rest\people\domain\entity\MovimientoEntity.class
+pe\senior\rest\people\api\mapper\ClienteMapperImpl.class
+pe\senior\rest\people\domain\entity\ClienteEntity.class
+pe\senior\rest\people\infrastructure\exception\GlobalExceptionHandler.class
+pe\senior\rest\people\application\service\ClienteService.class
+pe\senior\rest\people\application\dto\ClienteDTO.class
+pe\senior\rest\people\api\controller\ClienteController.class
+pe\senior\rest\people\domain\entity\CuentaEntity.class
+pe\senior\rest\people\infrastructure\repository\ClienteRepository.class
+pe\senior\rest\people\api\mapper\ClienteMapper.class
+pe\senior\rest\people\PeopleApplication.class
+pe\senior\rest\people\config\OpenApiConfig.class
+pe\senior\rest\people\infrastructure\exception\NotFoundException.class

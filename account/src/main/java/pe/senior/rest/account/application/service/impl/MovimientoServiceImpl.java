@@ -1,9 +1,8 @@
 package pe.senior.rest.account.application.service.impl;
 
+import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
-
-import jakarta.transaction.Transactional;
 import pe.senior.rest.account.application.service.MovimientoService;
 import pe.senior.rest.account.domain.entity.CuentaEntity;
 import pe.senior.rest.account.domain.entity.MovimientoEntity;

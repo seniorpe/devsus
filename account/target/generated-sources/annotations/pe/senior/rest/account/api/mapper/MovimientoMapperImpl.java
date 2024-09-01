@@ -2,14 +2,13 @@ package pe.senior.rest.account.api.mapper;
 
 import javax.annotation.processing.Generated;
 import org.springframework.stereotype.Component;
-import pe.senior.rest.account.application.dto.CuentaDTO;
 import pe.senior.rest.account.application.dto.MovimientoDTO;
 import pe.senior.rest.account.domain.entity.CuentaEntity;
 import pe.senior.rest.account.domain.entity.MovimientoEntity;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2024-08-31T15:28:11-0500",
+    date = "2024-09-01T00:43:55-0500",
     comments = "version: 1.5.4.Final, compiler: Eclipse JDT (IDE) 3.39.0.v20240820-0604, environment: Java 17.0.12 (Eclipse Adoptium)"
 )
 @Component
@@ -23,7 +22,7 @@ public class MovimientoMapperImpl implements MovimientoMapper {
 
         MovimientoDTO movimientoDTO = new MovimientoDTO();
 
-        movimientoDTO.setCuenta( cuentaEntityToCuentaDTO( movimiento.getCuenta() ) );
+        movimientoDTO.setCuentaId( movimientoCuentaId( movimiento ) );
         movimientoDTO.setFecha( movimiento.getFecha() );
         movimientoDTO.setId( movimiento.getId() );
         movimientoDTO.setSaldo( movimiento.getSaldo() );
@@ -41,7 +40,7 @@ public class MovimientoMapperImpl implements MovimientoMapper {
 
         MovimientoEntity movimientoEntity = new MovimientoEntity();
 
-        movimientoEntity.setCuenta( cuentaDTOToCuentaEntity( movimientoDTO.getCuenta() ) );
+        movimientoEntity.setCuentaId( movimientoDTO.getCuentaId() );
         movimientoEntity.setFecha( movimientoDTO.getFecha() );
         movimientoEntity.setId( movimientoDTO.getId() );
         movimientoEntity.setSaldo( movimientoDTO.getSaldo() );
@@ -51,35 +50,18 @@ public class MovimientoMapperImpl implements MovimientoMapper {
         return movimientoEntity;
     }
 
-    protected CuentaDTO cuentaEntityToCuentaDTO(CuentaEntity cuentaEntity) {
-        if ( cuentaEntity == null ) {
+    private Long movimientoCuentaId(MovimientoEntity movimientoEntity) {
+        if ( movimientoEntity == null ) {
             return null;
         }
-
-        CuentaDTO cuentaDTO = new CuentaDTO();
-
-        cuentaDTO.setEstado( cuentaEntity.getEstado() );
-        cuentaDTO.setId( cuentaEntity.getId() );
-        cuentaDTO.setNumeroCuenta( cuentaEntity.getNumeroCuenta() );
-        cuentaDTO.setSaldoInicial( cuentaEntity.getSaldoInicial() );
-        cuentaDTO.setTipoCuenta( cuentaEntity.getTipoCuenta() );
-
-        return cuentaDTO;
-    }
-
-    protected CuentaEntity cuentaDTOToCuentaEntity(CuentaDTO cuentaDTO) {
-        if ( cuentaDTO == null ) {
+        CuentaEntity cuenta = movimientoEntity.getCuenta();
+        if ( cuenta == null ) {
             return null;
         }
-
-        CuentaEntity cuentaEntity = new CuentaEntity();
-
-        cuentaEntity.setEstado( cuentaDTO.getEstado() );
-        cuentaEntity.setId( cuentaDTO.getId() );
-        cuentaEntity.setNumeroCuenta( cuentaDTO.getNumeroCuenta() );
-        cuentaEntity.setSaldoInicial( cuentaDTO.getSaldoInicial() );
-        cuentaEntity.setTipoCuenta( cuentaDTO.getTipoCuenta() );
-
-        return cuentaEntity;
+        Long id = cuenta.getId();
+        if ( id == null ) {
+            return null;
+        }
+        return id;
     }
 }

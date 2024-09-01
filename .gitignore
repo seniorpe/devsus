@@ -70,7 +70,7 @@ Thumbs.db
 
 # Archivos de propiedades de aplicación
 *.properties
-*.yml
+#*.yml
 *.yaml
 
 # Carpetas de generación de código

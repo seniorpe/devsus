@@ -9,7 +9,7 @@ import pe.senior.rest.account.domain.entity.MovimientoEntity;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2024-08-31T00:59:27-0500",
+    date = "2024-08-31T15:28:11-0500",
     comments = "version: 1.5.4.Final, compiler: Eclipse JDT (IDE) 3.39.0.v20240820-0604, environment: Java 17.0.12 (Eclipse Adoptium)"
 )
 @Component

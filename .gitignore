@@ -76,4 +76,4 @@ Thumbs.db
 # Carpetas de generación de código
 /generated/
 /account/target
-/people/target
+/people/target/

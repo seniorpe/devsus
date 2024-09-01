@@ -8,6 +8,7 @@ Este documento proporciona instrucciones para compilar el proyecto Spring Boot, 
 2. [Compilar el Proyecto](#compilar-el-proyecto)
 3. [Desplegar en Docker](#desplegar-en-docker)
 4. [Ejecutar Pruebas Unitarias y Karate](#ejecutar-pruebas-unitarias-y-karate)
+5. [Validar endpoints en Postman](#validar-endpoints-en-postman)
 
 ## Pre-requisitos
 
@@ -62,4 +63,18 @@ Esto levantará los servicios definidos en docker-compose.yml, incluyendo la apl
    mvn test
    
 Esto ejecutará todas las pruebas unitarias y karate y mostrará un resumen de los resultados.
-  
+
+## Validar endpoints en Postman
+1. **Importar la colección a Postman:**
+   ```bash
+   Importar->Seleccionar fichero DEVSUS.postman_collection.json
+   
+Al realiza la importacion se tendrá todos los endpoints requeridos.
+
+2. **Screenshot de la colección Postman**
+
+![](_screenshots/screenshot_postman.jpg)
+
+
+
+

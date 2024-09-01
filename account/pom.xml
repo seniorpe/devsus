@@ -156,6 +156,6 @@
                 </configuration>
             </plugin>
         </plugins>
-        <finalName>people-service</finalName>
+        <finalName>account-service</finalName>
     </build>
 </project>

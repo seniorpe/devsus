@@ -1,7 +1,7 @@
 {
 	"info": {
 		"_postman_id": "6cdf1916-6202-4664-86de-f12734377d25",
-		"name": "DEVUSUS",
+		"name": "DEVSUS",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "16723774",
 		"_collection_link": "https://solar-shadow-434329.postman.co/workspace/SENIOR~053a6c7f-0182-407a-88f0-b4c10b2ae9b9/collection/16723774-6cdf1916-6202-4664-86de-f12734377d25?action=share&source=collection_link&creator=16723774"
@@ -210,12 +210,12 @@
 									}
 								},
 								"url": {
-									"raw": "http://localhost:8080/clientes/1",
+									"raw": "http://localhost:8081/clientes/1",
 									"protocol": "http",
 									"host": [
 										"localhost"
 									],
-									"port": "8080",
+									"port": "8081",
 									"path": [
 										"clientes",
 										"1"
@@ -230,12 +230,12 @@
 								"method": "DELETE",
 								"header": [],
 								"url": {
-									"raw": "http://localhost:8080/clientes/4",
+									"raw": "http://localhost:8081/clientes/4",
 									"protocol": "http",
 									"host": [
 										"localhost"
 									],
-									"port": "8080",
+									"port": "8081",
 									"path": [
 										"clientes",
 										"4"

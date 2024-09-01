@@ -8,8 +8,8 @@ import pe.senior.rest.account.domain.entity.MovimientoEntity;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2024-09-01T00:43:55-0500",
-    comments = "version: 1.5.4.Final, compiler: Eclipse JDT (IDE) 3.39.0.v20240820-0604, environment: Java 17.0.12 (Eclipse Adoptium)"
+    date = "2024-09-01T04:03:01-0500",
+    comments = "version: 1.5.4.Final, compiler: javac, environment: Java 17.0.10 (Oracle Corporation)"
 )
 @Component
 public class MovimientoMapperImpl implements MovimientoMapper {
@@ -23,11 +23,11 @@ public class MovimientoMapperImpl implements MovimientoMapper {
         MovimientoDTO movimientoDTO = new MovimientoDTO();
 
         movimientoDTO.setCuentaId( movimientoCuentaId( movimiento ) );
-        movimientoDTO.setFecha( movimiento.getFecha() );
         movimientoDTO.setId( movimiento.getId() );
-        movimientoDTO.setSaldo( movimiento.getSaldo() );
+        movimientoDTO.setFecha( movimiento.getFecha() );
         movimientoDTO.setTipoMovimiento( movimiento.getTipoMovimiento() );
         movimientoDTO.setValor( movimiento.getValor() );
+        movimientoDTO.setSaldo( movimiento.getSaldo() );
 
         return movimientoDTO;
     }
@@ -40,12 +40,12 @@ public class MovimientoMapperImpl implements MovimientoMapper {
 
         MovimientoEntity movimientoEntity = new MovimientoEntity();
 
+        movimientoEntity.setId( movimientoDTO.getId() );
         movimientoEntity.setCuentaId( movimientoDTO.getCuentaId() );
         movimientoEntity.setFecha( movimientoDTO.getFecha() );
-        movimientoEntity.setId( movimientoDTO.getId() );
-        movimientoEntity.setSaldo( movimientoDTO.getSaldo() );
         movimientoEntity.setTipoMovimiento( movimientoDTO.getTipoMovimiento() );
         movimientoEntity.setValor( movimientoDTO.getValor() );
+        movimientoEntity.setSaldo( movimientoDTO.getSaldo() );
 
         return movimientoEntity;
     }

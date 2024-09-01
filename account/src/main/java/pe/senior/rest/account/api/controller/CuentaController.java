@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import pe.senior.rest.account.api.mapper.CuentaMapper;
 import pe.senior.rest.account.application.dto.CuentaDTO;
+import pe.senior.rest.account.application.dto.CuentaRegistroDTO;
 import pe.senior.rest.account.application.service.CuentaService;
 
 import java.util.List;
@@ -61,9 +62,8 @@ public class CuentaController {
             @ApiResponse(responseCode = "201", description = "Account created successfully"),
             @ApiResponse(responseCode = "422", description = "Invalid account data provided")
     })
-    public ResponseEntity<CuentaDTO> createCuenta(@RequestBody CuentaDTO cuentaDTO) {
-        var cuenta = cuentaMapper.toEntity(cuentaDTO);
-        var savedCuenta = cuentaService.save(cuenta);
+    public ResponseEntity<CuentaDTO> createCuenta(@RequestBody CuentaRegistroDTO cuentaDTO) {
+        var savedCuenta = cuentaService.register(cuentaDTO);
         return new ResponseEntity<>(cuentaMapper.toDTO(savedCuenta), HttpStatus.CREATED);
     }
 

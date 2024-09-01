@@ -1,5 +1,6 @@
 package pe.senior.rest.account.domain.entity;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -27,6 +28,7 @@ public class CuentaEntity {
     private Long id;
     @Transient
     private Long clienteId;
+    @Column(nullable = false, unique = true)
     private String numeroCuenta;
     private String tipoCuenta;
     private BigDecimal saldoInicial;

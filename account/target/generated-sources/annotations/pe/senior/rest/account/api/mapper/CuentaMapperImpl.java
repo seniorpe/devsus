@@ -8,8 +8,8 @@ import pe.senior.rest.account.domain.entity.CuentaEntity;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2024-08-31T22:26:35-0500",
-    comments = "version: 1.5.4.Final, compiler: Eclipse JDT (IDE) 3.39.0.v20240820-0604, environment: Java 17.0.12 (Eclipse Adoptium)"
+    date = "2024-09-01T04:03:01-0500",
+    comments = "version: 1.5.4.Final, compiler: javac, environment: Java 17.0.10 (Oracle Corporation)"
 )
 @Component
 public class CuentaMapperImpl implements CuentaMapper {
@@ -23,11 +23,11 @@ public class CuentaMapperImpl implements CuentaMapper {
         CuentaDTO cuentaDTO = new CuentaDTO();
 
         cuentaDTO.setClienteId( cuentaClienteId( cuenta ) );
-        cuentaDTO.setEstado( cuenta.getEstado() );
         cuentaDTO.setId( cuenta.getId() );
         cuentaDTO.setNumeroCuenta( cuenta.getNumeroCuenta() );
-        cuentaDTO.setSaldoInicial( cuenta.getSaldoInicial() );
         cuentaDTO.setTipoCuenta( cuenta.getTipoCuenta() );
+        cuentaDTO.setSaldoInicial( cuenta.getSaldoInicial() );
+        cuentaDTO.setEstado( cuenta.getEstado() );
 
         return cuentaDTO;
     }
@@ -41,12 +41,12 @@ public class CuentaMapperImpl implements CuentaMapper {
         CuentaEntity cuentaEntity = new CuentaEntity();
 
         cuentaEntity.setCliente( cuentaDTOToClienteEntity( cuentaDTO ) );
-        cuentaEntity.setClienteId( cuentaDTO.getClienteId() );
-        cuentaEntity.setEstado( cuentaDTO.getEstado() );
         cuentaEntity.setId( cuentaDTO.getId() );
+        cuentaEntity.setClienteId( cuentaDTO.getClienteId() );
         cuentaEntity.setNumeroCuenta( cuentaDTO.getNumeroCuenta() );
-        cuentaEntity.setSaldoInicial( cuentaDTO.getSaldoInicial() );
         cuentaEntity.setTipoCuenta( cuentaDTO.getTipoCuenta() );
+        cuentaEntity.setSaldoInicial( cuentaDTO.getSaldoInicial() );
+        cuentaEntity.setEstado( cuentaDTO.getEstado() );
 
         return cuentaEntity;
     }

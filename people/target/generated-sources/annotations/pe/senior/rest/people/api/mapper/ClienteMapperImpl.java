@@ -8,8 +8,8 @@ import pe.senior.rest.people.domain.entity.PersonaEntity;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2024-08-31T15:28:14-0500",
-    comments = "version: 1.5.4.Final, compiler: Eclipse JDT (IDE) 3.39.0.v20240820-0604, environment: Java 17.0.12 (Eclipse Adoptium)"
+    date = "2024-09-01T01:56:57-0500",
+    comments = "version: 1.5.4.Final, compiler: javac, environment: Java 17.0.10 (Oracle Corporation)"
 )
 @Component
 public class ClienteMapperImpl implements ClienteMapper {
@@ -28,9 +28,9 @@ public class ClienteMapperImpl implements ClienteMapper {
         clienteDTO.setIdentificacion( clientePersonaIdentificacion( cliente ) );
         clienteDTO.setDireccion( clientePersonaDireccion( cliente ) );
         clienteDTO.setTelefono( clientePersonaTelefono( cliente ) );
+        clienteDTO.setId( cliente.getId() );
         clienteDTO.setContrasena( cliente.getContrasena() );
         clienteDTO.setEstado( cliente.getEstado() );
-        clienteDTO.setId( cliente.getId() );
 
         return clienteDTO;
     }
@@ -44,9 +44,9 @@ public class ClienteMapperImpl implements ClienteMapper {
         ClienteEntity clienteEntity = new ClienteEntity();
 
         clienteEntity.setPersona( clienteDTOToPersonaEntity( clienteDTO ) );
+        clienteEntity.setId( clienteDTO.getId() );
         clienteEntity.setContrasena( clienteDTO.getContrasena() );
         clienteEntity.setEstado( clienteDTO.getEstado() );
-        clienteEntity.setId( clienteDTO.getId() );
 
         return clienteEntity;
     }

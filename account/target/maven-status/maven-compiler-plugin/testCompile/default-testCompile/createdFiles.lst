@@ -1,4 +1,3 @@
-pe\senior\rest\account\AccountApplicationTests.class
 pe\senior\rest\account\api\controller\MovimientoControllerTest.class
 pe\senior\rest\account\api\controller\CuentaControllerTest.class
 pe\senior\rest\account\KarateTests.class

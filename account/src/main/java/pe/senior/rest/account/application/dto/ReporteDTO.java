@@ -9,9 +9,9 @@ public class ReporteDTO {
     private String fecha;
     private String cliente;
     private String numeroCuenta;
-    private String tipo;
+    private String tipoCuenta;
     private BigDecimal saldoInicial;
     private boolean estado;
-    private BigDecimal movimiento;
-    private BigDecimal saldoDisponible;
+    private String tipoMovimiento;
+    private BigDecimal saldo;
 }

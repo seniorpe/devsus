@@ -1,77 +1,33 @@
-# Directorios de construcción
-/target/
-/out/
+HELP.md
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
 
-# Dependencias de Maven
-**/mvnw
-**/mvnw.cmd
-.mvn/wrapper/maven-wrapper.jar
-.mvn/wrapper/maven-wrapper.properties
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
 
-# Archivos de configuración del IDE
-/.idea/
-/*.iml
-*.log
-*.swp
-*.swo
-*.bak
-*.orig
-/.vscode/
-/*.launch
-/*.class
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
 
-# Archivos de sistema operativo
-.DS_Store
-Thumbs.db
-
-# Archivos de configuración del sistema operativo
-/.project
-/.classpath
-/.settings/
-
-# Archivos de configuración de Eclipse
-/.metadata/
-/bin/
-/tmp/
-/.*.swp
-
-# Archivos de configuración de IntelliJ
-/.idea/
-/*.iml
-
-# Archivos de configuración de NetBeans
+### NetBeans ###
 /nbproject/private/
 /nbbuild/
 /dist/
 /nbdist/
 /.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
 
-# Archivos de configuración de VSCode
+### VS Code ###
 .vscode/
-.history/
-*.code-workspace
-
-# Archivos de Logs
-*.log
-*.log.*
-
-# Archivos de test
-/test-classes/
-/test-output/
-
-# Archivos de configuración de Gradle
-.gradle/
-/build/
-
-# Archivos de JAR/WAR
-*.jar
-*.war
-*.ear
-
-# Archivos de propiedades de aplicación
-#*.properties
-#*.yml
-#*.yaml
-
-# Carpetas de generación de código
-/generated/

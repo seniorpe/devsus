@@ -8,7 +8,7 @@ import pe.senior.rest.people.domain.entity.PersonaEntity;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2024-09-01T14:30:15-0500",
+    date = "2024-09-02T00:31:32-0500",
     comments = "version: 1.5.4.Final, compiler: javac, environment: Java 17.0.10 (Oracle Corporation)"
 )
 @Component

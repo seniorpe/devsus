@@ -13,7 +13,7 @@ import pe.senior.rest.account.domain.entity.PersonaEntity;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2024-09-02T00:27:38-0500",
+    date = "2024-09-02T00:52:46-0500",
     comments = "version: 1.5.4.Final, compiler: javac, environment: Java 17.0.10 (Oracle Corporation)"
 )
 @Component
